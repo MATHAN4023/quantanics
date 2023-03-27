@@ -15,7 +15,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- stylesheet-->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/client.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/client.css">
     <!-- google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400&display=swap"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -59,7 +59,7 @@
                         aria-labelledby="pills-home-tab">
                         <div class="jumbotron border border-2 border border-info rounded rounded-o shadow shadow-md">
                             <br>
-                            <h2 class="text-center text-success ">Student Login</h2>
+                            <h2 class="text-center text-success ">Student Loginn</h2>
                             <br>
                             <div class="m-3">
                                 <div class="form-outline mb-4 input-container">
