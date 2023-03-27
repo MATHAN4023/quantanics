@@ -84,9 +84,6 @@
                             </div>
 
                             <div class="m-3">
-                                <!-- <input type="submit" value="Login"
-                                    class="btn btn-lg border-2 border border-info  rounded text-info"
-                                    style="width:100%;"> -->
                                 <div class="pt-1 mb-5 pb-1">
                                     <button class="btn btn-outline-primary" type="button" style="width:100%;">LOGIN</button>
                                 </div>
@@ -99,8 +96,6 @@
                             <h2 class="text-center text-success ">Admin Login</h2>
                             <br>
                             <div class="m-3">
-                                <!-- <input class="form-control form-control-lg" type="text" placeholder="Enter User Id"
-                                    id="formFile"> -->
                                     <div class="form-outline mb-4 input-container">
                                     <input type="text" id="form2Example11 reg_no" name="reg_no" class="input"
                                         placeholder=" " />
@@ -109,8 +104,6 @@
                             </div>
 
                             <div class="m-3">
-                                <!-- <input class="form-control form-control-lg" type="password" placeholder="Enter Password"
-                                    id="formFile"> -->
                                     <div class="form-outline mb-4 input-container">
                                     <input type="text" id="form2Example11 reg_no" name="reg_no" class="input"
                                         placeholder=" " />
