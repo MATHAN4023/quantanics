@@ -78,15 +78,17 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container ">
-                                        <input type="text" id="form2Example11 clg_name" name="clg_name" class="input" placeholder=" " onblur="validateCollege()" />
-                                        <label for="form2Example11" class="placeholder label">Enter College Name</label>
+                                        <input type="text" id="clg_name" name="clg_name" class="input" placeholder=" " onblur="validateCollege()" />
+                                        <label for="clg_name" class="placeholder label">Enter College Name</label>
+                                        <span id="clg_name_err"></span>
                                     </div>
                                 </div>
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="form2Example11 Enter Year" name="Enter Year" class="input" placeholder=" " />
-                                        <label for="form2Example11" class="placeholder label">Enter Year</label>
+                                        <input type="text" id="reg_Year" name="Enter Year" class="input" placeholder=" " onblur="validateYear()"/>
+                                        <label for="reg_Year" class="placeholder label">Enter Year</label>
+                                        <span id="reg_Year_err"></span>
                                     </div>
                                 </div>
 
@@ -110,8 +112,7 @@
                                         <input type="text" name="inputFile" id="InputFile" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Resume</label>
                                         <div class="pin" id="Pin"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-                                        <input type="file" name="ipfile" id="IpFile"
-                                            class="hidden form-control form-control-md">
+                                        <input type="file" name="ipfile" id="IpFile" class="hidden form-control form-control-md">
                                         <span class="label_txt">Resume Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
                                     </div>
@@ -162,10 +163,8 @@
                                     <div class="col-lg-3 col-md-2 col-sm-1">
                                     </div>
                                     <div class="col-lg-6 col-md-8 col-sm-10 button-next-back d-flex">
-                                        <button
-                                            class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
-                                        <button
-                                            class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
+                                        <button class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
+                                        <button class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
                                     </div>
                                     <div class="col-lg-3 col-md-2 col-sm-1"></div>
                                 </div>
@@ -345,7 +344,7 @@
         });
 
         const IpFile = document.getElementById('IpFile');
-        const maxFileSize =20 * 1024; // 5 MB
+        const maxFileSize = 20 * 1024; // 5 MB
 
         IpFile.addEventListener('change', () => {
             const file = IpFile.files[0];
@@ -451,13 +450,28 @@
         }
 
         function validateCollege() {
-            const collegeInput = document.getElementById('collegeInput');
+            const collegeInput = document.getElementById('clg_name');
             const college = collegeInput.value;
             const regex = /^[a-zA-Z\s]+$/; // regular expression to match college name pattern
-            if (regex.test(college)) {
-                console.log('Valid college name');
-            } else {
-                console.log('Invalid college name');
+            if (!regex.test(college)) {
+                $('#clg_name_err').text("Enter a Correct College Name");
+                $("#clg_name_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
+            }
+        }
+
+        function validateYear() {
+            const yearInput = document.getElementById('reg_Year');
+            const year = yearInput.value;
+            const regex = /^[0-9]{4}$/; // regular expression to match year of passing pattern
+            if (!regex.test(year)) {
+                $('#reg_Year_err').text("Enter a Correct Year");
+                $("#reg_Year_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
             }
         }
     </script>
