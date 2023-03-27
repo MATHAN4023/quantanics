@@ -100,7 +100,6 @@
                                         <span id="clg_name_err"></span>
                                     </div>
                                 </div>
-
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
                                         <input type="text" id="form2Example11 Enter Year" name="Enter Year"
