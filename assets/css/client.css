@@ -115,10 +115,6 @@ padding: 25px;
     width: 100%;
 }
 
-.ic2 {
-    margin-top: 30px;
-}
-
 input {
     border-width: 1px;
     opacity: 0.7;
@@ -132,7 +128,7 @@ input {
     font-size: 18px;
     height: 100%;
     outline: 0;
-    padding: 4px 20px 0;
+    padding: 10px 15px;
     width: 100%;
 
 }
@@ -199,6 +195,9 @@ label {
 .btn-lg{
     width: 120px;
    margin-left: 10px;
+}
+.m-3{
+    padding: 4px;
 }
 
 
