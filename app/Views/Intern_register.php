@@ -47,7 +47,7 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="reg_name" name="Enter Name" class="input" placeholder=" " onblur="validateName()" />
+                                        <input type="text" id="reg_name" name="Enter Name" class="input" placeholder=" " onblur="validateUsername()" />
                                         <label for="reg_name" class="placeholder label">Enter Name</label>
                                         <span id="name_err"></span>
                                         <!-- form2Example11 Enter Name -->
@@ -55,27 +55,30 @@
                                 </div>
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="form2Example11 email_id" name="email_id" class="input" placeholder=" " />
-                                        <label for="form2Example11" class="placeholder label">Enter Email ID</label>
+                                        <input type="email" id="email_id" name="email_id" class="input" placeholder=" " onblur="validateEmail()" />
+                                        <label for="email_id" class="placeholder label">Enter Email ID</label>
+                                        <span id="reg_mail_err"></span>
                                     </div>
                                 </div>
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="form2Example11 dept" name="dept" class="input" placeholder=" " />
-                                        <label for="form2Example11" class="placeholder label">Enter Department</label>
+                                        <input type="text" id="dept" name="dept" class="input" placeholder=" " onblur="validateDepartment()" />
+                                        <label for="dept" class="placeholder label">Enter Department</label>
+                                        <span id="dept_err"></span>
                                     </div>
                                 </div>
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="form2Example11 mobile" name="mobile" class="input" placeholder=" " />
-                                        <label for="form2Example11" class="placeholder label">Enter Mobile</label>
+                                        <input type="text" id="mobile" name="mobile" class="input" placeholder=" " onblur="validateMobile()" />
+                                        <label for="mobile" class="placeholder label">Enter Mobile</label>
+                                        <span id="mobile_err"></span>
                                     </div>
                                 </div>
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container ">
-                                        <input type="text" id="form2Example11 clg_name" name="clg_name" class="input" placeholder=" " />
+                                        <input type="text" id="form2Example11 clg_name" name="clg_name" class="input" placeholder=" " onblur="validateCollege()" />
                                         <label for="form2Example11" class="placeholder label">Enter College Name</label>
                                     </div>
                                 </div>
@@ -381,13 +384,67 @@
             }
         }
 
-        function validateName() {   //name(parameter)
-            var regex = /^[a-zA-Z\s'-]+$/;
-            var reg_name = document.getElementById("reg_name").value;
-            if (name && regex.test(name)) {
-                return true;
+        function validateUsername() {
+            const usernameInput = document.getElementById('reg_name');
+            const username = usernameInput.value;
+            const regex = /^[a-zA-Z0-9_]{4,16}$/; // regular expression to match username pattern
+            if (!regex.test(username)) {
+                $('#name_err').text("Enter a valid name");
+                $("#name_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
+            }
+        }
+
+        function validateEmail() {
+            const emailInput = document.getElementById('email_id');
+            const email = emailInput.value;
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // regular expression to match email pattern
+            if (!regex.test(email)) {
+                $('#reg_mail_err').text("Enter a valid email");
+                $("#reg_mail_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
+            }
+        }
+
+        function validateDepartment() {
+            const departmentInput = document.getElementById('dept');
+            const department = departmentInput.value;
+            const regex = /^[a-zA-Z]+$/; // regular expression to match department pattern
+            // alert("hai");
+            if (!regex.test(department)) {
+                $('#dept_err').text("Enter a valid department");
+                $("#dept_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
+            }
+        }
+
+        function validateMobile() {
+            const mobileInput = document.getElementById('mobile');
+            const mobile = mobileInput.value;
+            const regex = /^[0-9]{10}$/; // regular expression to match mobile number pattern
+            if (!regex.test(mobile)) {
+                $('#mobile_err').text("Enter a Moblie Number");
+                $("#mobile_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
+            }
+        }
+
+        function validateCollege() {
+            const collegeInput = document.getElementById('collegeInput');
+            const college = collegeInput.value;
+            const regex = /^[a-zA-Z\s]+$/; // regular expression to match college name pattern
+            if (regex.test(college)) {
+                console.log('Valid college name');
             } else {
-                return false;
+                console.log('Invalid college name');
             }
         }
     </script>
