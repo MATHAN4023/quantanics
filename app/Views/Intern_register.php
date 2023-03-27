@@ -92,29 +92,23 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container ">
-<<<<<<< HEAD
                                         <input type="text" id="form2Example11 clg_name" name="clg_name" class="input"
                                             placeholder=" " onblur="validateCollege()" />
                                         <label for="form2Example11" class="placeholder label">Enter College Name</label>
-=======
                                         <input type="text" id="clg_name" name="clg_name" class="input" placeholder=" " onblur="validateCollege()" />
                                         <label for="clg_name" class="placeholder label">Enter College Name</label>
                                         <span id="clg_name_err"></span>
->>>>>>> c4109de99f6c0930e1b6673ca6e3146909b38218
                                     </div>
                                 </div>
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-<<<<<<< HEAD
                                         <input type="text" id="form2Example11 Enter Year" name="Enter Year"
                                             class="input" placeholder=" " />
                                         <label for="form2Example11" class="placeholder label">Enter Year</label>
-=======
                                         <input type="text" id="reg_Year" name="Enter Year" class="input" placeholder=" " onblur="validateYear()"/>
                                         <label for="reg_Year" class="placeholder label">Enter Year</label>
                                         <span id="reg_Year_err"></span>
->>>>>>> c4109de99f6c0930e1b6673ca6e3146909b38218
                                     </div>
                                 </div>
 
@@ -141,12 +135,9 @@
                                             readonly>
                                         <label for="form2Example11" class="placeholder label">Resume</label>
                                         <div class="pin" id="Pin"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-<<<<<<< HEAD
                                         <input type="file" name="ipfile" id="IpFile"
                                             class="hidden form-control form-control-md" onblur="checkFileSize()">
-=======
                                         <input type="file" name="ipfile" id="IpFile" class="hidden form-control form-control-md">
->>>>>>> c4109de99f6c0930e1b6673ca6e3146909b38218
                                         <span class="label_txt">Resume Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
                                     </div>
@@ -202,17 +193,15 @@
                                 <div class="row m-3">
                                     <div class="col-lg-3 col-md-1 col-sm-1">
                                     </div>
-<<<<<<< HEAD
+
                                     <div class="col-lg-6 col-md-10 col-sm-10 button-next-back d-flex">
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
-=======
                                     <div class="col-lg-6 col-md-8 col-sm-10 button-next-back d-flex">
                                         <button class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
                                         <button class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
->>>>>>> c4109de99f6c0930e1b6673ca6e3146909b38218
                                     </div>
                                     <div class="col-lg-3 col-md-1 col-sm-1"></div>
                                 </div>
@@ -395,12 +384,8 @@
                 $("#InputFile4").val($("#IpFile4")[0].files[0].name);
             });
         });
-
-<<<<<<< HEAD
-=======
         const IpFile = document.getElementById('IpFile');
         const maxFileSize = 20 * 1024; // 5 MB
->>>>>>> c4109de99f6c0930e1b6673ca6e3146909b38218
 
         // const IpFile = document.getElementById('IpFile');
         // const maxFileSize =20 * 1024; // 5 MB
