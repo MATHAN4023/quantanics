@@ -84,9 +84,9 @@
                             </div>
 
                             <div class="m-3">
-                                <div class="pt-1 mb-5 pb-1">
-                                    <button class="btn btn-outline-primary" type="button" style="width:100%;">LOGIN</button>
-                                </div>
+                                <input type="submit" value="Login"
+                                    class="btn btn-lg border-2 border border-info  rounded text-info"
+                                    style="width:100%;">
                             </div>
                         </div>
                     </div>

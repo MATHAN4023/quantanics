@@ -108,7 +108,6 @@
                                     </div>
                                     <div class="col-4"></div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -178,14 +177,15 @@
                                     <br>
                                 </div>
                                 <div class="row m-3">
-                                    <div class="col-2"></div>
-                                    <div class="col-8">
+                                    <div class="col-lg-3 col-md-2 col-sm-1">
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-sm-10 button-next-back d-flex">
                                         <button
-                                            class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
+                                            class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>      
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
                                     </div>
-                                    <div class="col-2"></div>
+                                    <div class="col-lg-3 col-md-2 col-sm-1"></div>
                                 </div>
                             </div>
                         </div>
@@ -225,7 +225,7 @@
 
                                 <div class="row m-3">
                                     <div class="col-lg-3 col-md-3 col-sm-1"></div>
-                                    <div class="col-lg-6 col-md-6 col-sm-10">
+                                    <div class="col-lg-6 col-md-6 col-sm-10 button-next-back d-flex ">
                                         <button
                                             class="btn btn-lg border border-2 border-primary rounded text-primary back_btn">Back</button>
                                         <input type="submit" value="Insert"
