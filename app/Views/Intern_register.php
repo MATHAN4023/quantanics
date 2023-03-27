@@ -107,14 +107,9 @@
                                         <input type="text" name="inputFile" id="InputFile" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Resume</label>
                                         <div class="pin" id="Pin"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-<<<<<<< HEAD
                                         <input type="file" name="ipfile" id="IpFile"
                                             class="hidden form-control form-control-md">
                                         <span class="label_txt">Resume Lesser then 20KB and its only pdf , jpg, jpeg
-=======
-                                        <input type="file" name="ipfile" id="IpFile" class="hidden form-control form-control-md">
-                                        <span class="label_txt">Resume Lesser then 2KB and its only pdf , jpg, jpeg
->>>>>>> 942fb2f9e8a933e25656080cc06ef688b8e6887f
                                             aceept</span>
                                     </div>
                                     <br>
@@ -164,15 +159,10 @@
                                     <div class="col-lg-3 col-md-2 col-sm-1">
                                     </div>
                                     <div class="col-lg-6 col-md-8 col-sm-10 button-next-back d-flex">
-<<<<<<< HEAD
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
-=======
-                                        <button class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
-                                        <button class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
->>>>>>> 942fb2f9e8a933e25656080cc06ef688b8e6887f
                                     </div>
                                     <div class="col-lg-3 col-md-2 col-sm-1"></div>
                                 </div>
