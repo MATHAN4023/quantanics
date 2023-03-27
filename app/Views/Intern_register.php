@@ -124,7 +124,7 @@
                                         <div class="pin" id="Pin"><i class="fa-solid fa-paperclip pin-icon"></i></div>
                                         <input type="file" name="ipfile" id="IpFile"
                                             class="hidden form-control form-control-md">
-                                        <span class="label_txt">Resume Lesser then 2KB and its only pdf , jpg, jpeg
+                                        <span class="label_txt">Resume Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
                                     </div>
                                     <br>
@@ -181,7 +181,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-8 col-sm-10 button-next-back d-flex">
                                         <button
-                                            class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>      
+                                            class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
                                     </div>
@@ -345,7 +345,6 @@
             });
             $("#IpFile").change(function () {
                 $("#InputFile").val($("#IpFile")[0].files[0].name);
-                //alert($("#IpFile")[0].files[0].name);
 
             });
 
@@ -354,23 +353,34 @@
             });
             $("#IpFile1").change(function () {
                 $("#InputFile1").val($("#IpFile1")[0].files[0].name);
-                //alert($("#IpFile")[0].files[0].name);
             });
             $("#Pin2").click(function () {
                 $("#IpFile2").trigger("click");
             });
             $("#IpFile2").change(function () {
                 $("#InputFile2").val($("#IpFile2")[0].files[0].name);
-                //alert($("#IpFile")[0].files[0].name);
             });
             $("#Pin4").click(function () {
                 $("#IpFile4").trigger("click");
             });
             $("#IpFile4").change(function () {
                 $("#InputFile4").val($("#IpFile4")[0].files[0].name);
-                //alert($("#IpFile")[0].files[0].name);
             });
         });
+
+        const IpFile = document.getElementById('IpFile');
+        const maxFileSize =20 * 1024; // 5 MB
+
+        IpFile.addEventListener('change', () => {
+            const file = IpFile.files[0];
+
+            if (file.size > maxFileSize) {
+                alert('File size exceeds the limit of 20 kB');
+                IpFile.value = ''; // Clear the input field
+            }
+        });
+
+
 
 
 
