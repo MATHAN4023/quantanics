@@ -92,8 +92,8 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container ">
-                                        <input type="text" id="clg_name" name="clg_name" class="input"
-                                            placeholder=" " onblur="validateCollege()" />
+                                        <input type="text" id="clg_name" name="clg_name" class="input" placeholder=" "
+                                            onblur="validateCollege()" />
                                         <label for="form2Example11" class="placeholder label">Enter College Name</label>
                                         <span id="clg_name_err"></span>
                                     </div>
@@ -101,10 +101,10 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="reg_year" name="Enter Year"
-                                            class="input" placeholder=" " />
-                                        <label for="form2Example11" class="placeholder label">Enter Year</label>
-                                        <span id="reg_year_err"></span>
+                                        <input type="text" id="reg_Year" name="Enter Year" class="input"
+                                            placeholder=" " onblur="validateYear()"/>
+                                        <label for="reg_Year" class="placeholder label">Enter Year</label>
+                                        <span id="reg_Year_err"></span>
                                     </div>
                                 </div>
 
@@ -377,17 +377,17 @@
         });
 
 
-        // const IpFile = document.getElementById('IpFile');
-        // const maxFileSize =20 * 1024; // 5 MB
+        const IpFile = document.getElementById('IpFile');
+        const maxFileSize =20 * 1024; // 5 MB
 
-        // IpFile.addEventListener('change', () => {
-        //     const file = IpFile.files[0];
+        IpFile.addEventListener('change', () => {
+            const file = IpFile.files[0];
 
-        //     if (file.size > maxFileSize) {
-        //         alert('File size exceeds the limit of 20 kB');
-        //         IpFile.value = ''; // Clear the input field
-        //     }
-        // });
+            if (file.size > maxFileSize) {
+                alert('File size exceeds the limit of 20 kB');
+                IpFile.value = ''; // Clear the input field
+            }
+        });
 
         function datefun() {
             var date = document.getElementById("form2Example22");
@@ -483,9 +483,21 @@
             const collegeInput = document.getElementById('clg_name');
             const college = collegeInput.value;
             const regex = /^[a-zA-Z\s]+$/; // regular expression to match college name pattern
-            if (regex.test(college)) {
+            if (!regex.test(college)) {
                 $('#clg_name_err').text("Enter a Moblie Number");
                 $("#clg_name_err").css({
+                    "color": "red",
+                    "font-size": "10px"
+                });
+            }
+        }
+        function validateYear() {
+            const yearInput = document.getElementById('reg_Year');
+            const year = yearInput.value;
+            const regex = /^[0-9]{4}$/; // regular expression to match year of passing pattern
+            if (!regex.test(year)) {
+                $('#reg_Year_err').text("Enter a Correct Year");
+                $("#reg_Year_err").css({
                     "color": "red",
                     "font-size": "10px"
                 });
