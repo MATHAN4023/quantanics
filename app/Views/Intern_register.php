@@ -101,8 +101,8 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="reg_Year" name="Enter Year" class="input"
-                                            placeholder=" " onblur="validateYear()"/>
+                                        <input type="text" id="reg_Year" name="Enter Year" class="input" placeholder=" "
+                                            onblur="validateYear()" />
                                         <label for="reg_Year" class="placeholder label">Enter Year</label>
                                         <span id="reg_Year_err"></span>
                                     </div>
@@ -119,6 +119,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- second -->
                         <div class="carousel-item">
                             <div class="jumbotron border border-2 border-info shadow shadow-sm  rounded ">
                                 <br>
@@ -185,9 +186,8 @@
                                     </div>
                                     <br>
                                 </div>
-                                <div class="row m-3">
-                                    <div class="col-lg-3 col-md-1 col-sm-1">
-                                    </div>
+                                <div class="row m-3 ">
+                                    <div class="col-lg-3 col-md-1 col-sm-1"></div>
                                     <div class="col-lg-6 col-md-10 col-sm-10 button-next-back d-flex">
                                         <button
                                             class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
@@ -200,7 +200,7 @@
                         </div>
 
 
-
+                        <!-- third -->
                         <div class="carousel-item">
                             <div class="jumbotron border border-2 border-info shadow shadow-sm  rounded ">
                                 <br>
@@ -233,6 +233,7 @@
                                 </div>
 
                                 <div class="row m-3">
+
                                     <div class="col-lg-3 col-md-3 col-sm-1"></div>
                                     <div class="col-lg-6 col-md-6 col-sm-10 button-next-back d-flex ">
                                         <button
@@ -242,15 +243,21 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-1"></div>
                                 </div>
+                                
 
                             </div>
+                            <br><br><br><br>
                         </div>
+                        
                     </div>
+                   
                 </div>
-                <!-- </form> -->
+                
 
+                <!-- </form> -->     
             </div>
             <div class="col-lg-3"></div>
+
         </div>
     </div>
 
@@ -378,8 +385,7 @@
 
 
         const IpFile = document.getElementById('IpFile');
-        const maxFileSize =20 * 1024; // 5 MB
-
+        const maxFileSize = 20 * 1024; // 5 MB
         IpFile.addEventListener('change', () => {
             const file = IpFile.files[0];
 
@@ -388,6 +394,17 @@
                 IpFile.value = ''; // Clear the input field
             }
         });
+
+        // const IpFile = document.getElementById('IpFile1');
+        // const maxFileSize =20 * 1024; // 5 MB
+        // IpFile.addEventListener('change', () => {
+        //     const file = IpFile.files[0];
+
+        //     if (file.size > maxFileSize) {
+        //         alert('File size exceeds the limit of 20 kB');
+        //         IpFile.value = ''; // Clear the input field
+        //     }
+        // });
 
         function datefun() {
             var date = document.getElementById("form2Example22");
