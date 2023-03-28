@@ -29,7 +29,7 @@
 <body>
     <?php require_once "Header.php"; ?>
 
-    <div class="container">
+    <div class="container ">
 
         <!-- icon header -->
         <div class="row">
@@ -137,10 +137,12 @@
                 </div>
                 <div class="col-lg-3 col-md-2"></div>
             </div>
+            
 
         </div>
+        <br><br>
 
-
+    </div>
 
         <?php require_once "Footer.php"; ?>
 
@@ -218,6 +220,6 @@
 
 
 
-</body>
+
 
 </html>
