@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 body{
   min-height: 100vh;
   font-family: -apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -81,6 +83,10 @@ letter-spacing: 0.04;
 width: 100%;
 height:auto;
 overflow: hidden;
+}
+
+.container{
+    max-width: none;
 }
 .input input{
 width: 80%;
