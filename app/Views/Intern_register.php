@@ -223,7 +223,7 @@
                                 </div>
 
                                 <div class="m-3">
-                                    <select class="form-select" aria-label="Default select example" name="domain"
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="domain"
                                         id="domain">
                                         <option selected disabled>Select Domain</option>
                                         <option value="Web">Web</option>
