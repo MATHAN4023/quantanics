@@ -193,9 +193,7 @@
                                 </div>
 
                                 <div class="m-3">
-                                    <select class="form-select" aria-label="Default select example" name="domain" id="domain">
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="domain"
-                                        id="domain">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="domain" id="domain">
                                         <option selected disabled>Select Domain</option>
                                         <option value="Web">Web</option>
                                         <option value="App">App</option>
@@ -427,7 +425,7 @@
                     "font-size": "10px"
                 });
                 return false;
-            }else {
+            } else {
                 $('#name_err').text("");
                 return true;
             }
@@ -444,8 +442,7 @@
                     "font-size": "10px"
                 });
                 return false;
-            }
-            else {
+            } else {
                 $('#reg_mail_err').text("");
                 return true;
             }
@@ -463,8 +460,7 @@
                     "font-size": "10px"
                 });
                 return false;
-            }
-            else {
+            } else {
                 $('#dept_err').text("");
                 return true;
             }
@@ -481,8 +477,7 @@
                     "font-size": "10px"
                 });
                 return false;
-            }
-            else {
+            } else {
                 $('#mobile_err').text("");
                 return true;
             }
@@ -499,8 +494,7 @@
                     "font-size": "10px"
                 });
                 return false;
-            }
-            else {
+            } else {
                 $('#clg_name_err').text("");
                 return true;
             }
@@ -517,8 +511,7 @@
                     "font-size": "10px"
                 });
                 return false;
-            }
-            else {
+            } else {
                 $('#reg_Year_err').text("");
                 return true;
             }
