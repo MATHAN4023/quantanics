@@ -74,7 +74,7 @@
                             </div>
 
                             <div class="m-3">
-                                <input type="submit" value="Login" class="btn btn-lg border-2 border border-info  rounded text-info" style="width:100%;" id="no_err" onclick="return validateForm()">
+                                <input type="submit" value="Login" class="btn btn-lg border-2 border border-info  rounded text-info" style="width:100%;" id="intern_log_btn">
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                 </div>
 
                                 <div class="m-3">
-                                    <input type="submit" value="Login" class="btn btn-lg border-2 border border-info  rounded text-info" style="width:100%;">
+                                    <input type="submit" value="Login" class="btn btn-lg border-2 border border-info  rounded text-info" style="width:100%;" id="admin_log_btn">
                                 </div>
                             </div>
                         </div>
@@ -146,9 +146,11 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
             } else {
                 // var no_err_stu_reg = 0;
                 $('#studentUid_err').text("");
+                return true;
             }
         }
 
@@ -170,9 +172,11 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
             } else {
                 var no_err_date = 0;
                 $('#date_err').text("");
+                return true;
             }
         }
 
@@ -185,8 +189,10 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
             } else {
                 $('#adminIderr').text("");
+                return true;
             }
         }
 
@@ -199,23 +205,50 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
             } else {
                 $('#adminPassworderr').text("");
+                return true;
             }
         }
 
-        function validateForm() {
-            var regno_str = $('#studentUid_err').text();
-            var date_err = $('#date_err').text();
-            // console.log("validation message");
-            // console.log(regno_str);
-            // console.log(date_err);
-            if ((regno_str!="") && (date_err!="")) {
-                console.log("error");
-            }else{
-                console.log("success");
+        $('#intern_log_btn').on('click', function() {
+            console.log(validateDate());
+            if(Alphanumeric() && validateDate()){
+                alert("Success");
             }
-        }
+            else{
+                alert("Fail");
+            }
+        });
+
+        $('#admin_log_btn').on('click', function() {
+            if(Alphanumeric1() && passwordValidate1()){
+                alert("Success");
+            }
+            else{
+                alert("Fail");
+            }
+        });
+
+
+        // $(document).on('click','#intern_log_btn',function(event){
+        //     event.preventDefault();
+        //     alert('ahi');
+        //     var date_str =  $('#dob_intern').text();
+        //     var regno_str = $('#regno_input').text();
+
+        //     console.log("intern login validation");
+        //     console.log(regno_str);
+        //     console.log(date_str);
+        //     console.log(parseInt(date_str)>0 && parseInt(regno_str)>0);
+        //     if (parseInt(date_str)>0 && parseInt(regno_str)>0) {
+        //         console.log('errors');
+        //     }else{
+        //         console.log('success');
+        //     }
+
+        // });
     </script>
 
 
