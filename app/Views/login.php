@@ -92,7 +92,7 @@
                             <div class="m-3">
                                 <input type="submit" value="Login"
                                     class="btn btn-lg border-2 border border-info  rounded text-info"
-                                    style="width:100%;">
+                                    style="width:100%;" id="no_err" onclick="return validateForm()">
                             </div>
                         </div>
                     </div>
@@ -112,9 +112,9 @@
 
                             <div class="m-3">
                                 <div class="form-outline mb-4 input-container">
-                                    <input type="text" id="form2Example11" name="reg_no" class="input" placeholder=" "
+                                    <input type="text" id="adminpasword" name="reg_no" class="input" placeholder=" "
                                         onblur="passwordValidate1()" />
-                                    <label for="form2Example11" class="placeholder label">Enter Password</label>
+                                    <label for="adminpasword" class="placeholder label">Enter Password</label>
                                     <span id="adminPassworderr"></span>
                                 </div>
 
@@ -168,6 +168,10 @@
                         "font-size": "10px"
                     });
                 }
+                else{
+                    // var no_err_stu_reg = 0;
+                    $('#studentUid_err').text("");
+                }
             }
 
             function isDateNotExceedingCurrentDate(dateString) {
@@ -189,6 +193,10 @@
                         "font-size": "10px"
                     });
                 }
+                else{
+                    var no_err_date = 0;
+                    $('#date_error').text("");
+                }
             }
 
             function Alphanumeric1() { //registerNumber(parameter)
@@ -201,10 +209,14 @@
                         "font-size": "10px"
                     });
                 }
+                else{
+                    $('#adminIderr').text("");
+                }
             }
 
             function passwordValidate1() {
-                var adminPw = document.getElementById("form2Example11").value;
+                var adminPw = document.getElementById("adminpasword").value;
+                // alert(adminPw.length)
                 if (adminPw.length < 8) {
                     $("#adminPassworderr").text("Password can't be less than 8 Characters");
                     $("#adminPassworderr").css({
@@ -212,7 +224,21 @@
                         "font-size": "10px"
                     });
                 }
+                else{
+                    $('#adminPassworderr').text("");
+                }
             }
+
+            function validateForm(){
+                alert("validateForm");
+                // if (no_err_stu_reg = 0) {
+                //     alert("hai"); 
+                // } 
+                // else {
+                //     alert("else");
+                // }
+            }
+
         </script>
 
 
