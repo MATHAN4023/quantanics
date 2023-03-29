@@ -5,24 +5,15 @@
     <meta charset="utf-8">
     <title>Insertnship Registeration</title>
     <!--semantic ui cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- stylesheet-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/client.css">
     <!-- google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400&display=swap"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400&display=swap" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -48,8 +39,7 @@
                                 <br>
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="form2Example11" name="reg_no" class="input"
-                                            placeholder=" " onblur="Alphanumeric()" />
+                                        <input type="text" id="form2Example11" name="reg_no" class="input" placeholder=" " onblur="Alphanumeric()" />
                                         <label for="form2Example11" class="placeholder label">Register No </label>
                                         <span id="studentUid_err"></span>
                                     </div>
@@ -57,8 +47,7 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="reg_name" name="Enter Name" class="input" placeholder=" "
-                                            onblur="validateUsername()" />
+                                        <input type="text" id="reg_name" name="Enter Name" class="input" placeholder=" " onblur="validateUsername()" />
                                         <label for="reg_name" class="placeholder label">Enter Name</label>
                                         <span id="name_err"></span>
                                         <!-- form2Example11 Enter Name -->
@@ -66,8 +55,7 @@
                                 </div>
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="email" id="email_id" name="email_id" class="input" placeholder=" "
-                                            onblur="validateEmail()" />
+                                        <input type="email" id="email_id" name="email_id" class="input" placeholder=" " onblur="validateEmail()" />
                                         <label for="email_id" class="placeholder label">Enter Email ID</label>
                                         <span id="reg_mail_err"></span>
                                     </div>
@@ -75,16 +63,14 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="dept" name="dept" class="input" placeholder=" "
-                                            onblur="validateDepartment()" />
+                                        <input type="text" id="dept" name="dept" class="input" placeholder=" " onblur="validateDepartment()" />
                                         <label for="dept" class="placeholder label">Enter Department</label>
                                         <span id="dept_err"></span>
                                     </div>
                                 </div>
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="mobile" name="mobile" class="input" placeholder=" "
-                                            onblur="validateMobile()" />
+                                        <input type="text" id="mobile" name="mobile" class="input" placeholder=" " onblur="validateMobile()" />
                                         <label for="mobile" class="placeholder label">Enter Mobile</label>
                                         <span id="mobile_err"></span>
                                     </div>
@@ -92,8 +78,7 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container ">
-                                        <input type="text" id="clg_name" name="clg_name" class="input" placeholder=" "
-                                            onblur="validateCollege()" />
+                                        <input type="text" id="clg_name" name="clg_name" class="input" placeholder=" " onblur="validateCollege()" />
                                         <label for="form2Example11" class="placeholder label">Enter College Name</label>
                                         <span id="clg_name_err"></span>
                                     </div>
@@ -101,8 +86,7 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" id="reg_Year" name="Enter Year" class="input" placeholder=" "
-                                            onblur="validateYear()" />
+                                        <input type="text" id="reg_Year" name="Enter Year" class="input" placeholder=" " onblur="validateYear()" />
                                         <label for="reg_Year" class="placeholder label">Enter Year</label>
                                         <span id="reg_Year_err"></span>
                                     </div>
@@ -111,9 +95,7 @@
                                 <div class="row mb-3">
                                     <div class="col-4"></div>
                                     <div class="col-4">
-                                        <button type="button"
-                                            class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click"
-                                            style="width:100%">Next</button>
+                                        <button type="button" class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click" style="width:100%" id="reg_first_btn">Next</button>
                                     </div>
                                     <div class="col-4"></div>
                                 </div>
@@ -128,12 +110,10 @@
                                 <div class="m-3">
 
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" name="inputFile" id="InputFile" class="input" placeholder=" "
-                                            readonly>
+                                        <input type="text" name="inputFile" id="InputFile" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Resume</label>
                                         <div class="pin" id="Pin"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-                                        <input type="file" name="ipfile" id="IpFile"
-                                            class="hidden form-control form-control-md" onblur="checkFileSize()">
+                                        <input type="file" name="ipfile" id="IpFile" class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">Resume Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
                                     </div>
@@ -144,27 +124,37 @@
                                 <div class="m-3">
 
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" name="inputFile" id="InputFile1" class="input"
-                                            placeholder=" " readonly>
+                                        <input type="text" name="inputFile" id="InputFile1" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Bonafide</label>
                                         <div class="pin" id="Pin1"><i class="fa-solid fa-paperclip pin-icon"></i></div>
+<<<<<<< HEAD
                                         <input type="file" name="ipfile " id="IpFile1"
                                             class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">Bonafide Lesser then 20KB and its only pdf , jpg, jpeg aceept</span>
+=======
+                                        <input type="file" name="ipfile " id="IpFile1" class="hidden form-control form-control-md" onblur="checkFileSize()">
+                                        <span class="label_txt">Bonafide Lesser then 20KB and its only pdf , jpg, jpeg
+                                            aceept</span>
+>>>>>>> e8ebcd8ab8670bd64aa283b9aa1b57b19e097f36
                                     </div>
                                     <br>
                                 </div>
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" name="inputFile" id="InputFile2" class="input"
-                                            placeholder=" " readonly>
+                                        <input type="text" name="inputFile" id="InputFile2" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Id
                                             Card</label>
                                         <div class="pin" id="Pin2"><i class="fa-solid fa-paperclip pin-icon"></i></div>
+<<<<<<< HEAD
                                         <input type="file" name="ipfile" id="IpFile2"
                                             class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">ID Card Lesser then 20KB and its only pdf , jpg, jpeg aceept</span>
+=======
+                                        <input type="file" name="ipfile" id="IpFile2" class="hidden form-control form-control-md" onblur="checkFileSize()">
+                                        <span class="label_txt">ID Card Lesser then 20KB and its only pdf , jpg, jpeg
+                                            aceept</span>
+>>>>>>> e8ebcd8ab8670bd64aa283b9aa1b57b19e097f36
                                     </div>
                                     <br>
                                 </div>
@@ -172,12 +162,10 @@
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" name="inputFile" id="InputFile4" class="input"
-                                            placeholder=" " readonly>
+                                        <input type="text" name="inputFile" id="InputFile4" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Profile</label>
                                         <div class="pin" id="Pin4"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-                                        <input type="file" name="ipfile" id="IpFile4"
-                                            class="hidden form-control form-control-md" onblur="checkFileSize()">
+                                        <input type="file" name="ipfile" id="IpFile4" class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">Profile Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
                                     </div>
@@ -186,10 +174,8 @@
                                 <div class="row m-3 ">
                                     <div class="col-lg-3 col-md-1 col-sm-1"></div>
                                     <div class="col-lg-6 col-md-10 col-sm-10 button-next-back d-flex">
-                                        <button
-                                            class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
-                                        <button
-                                            class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
+                                        <button class="btn btn-lg mx-auto border border-2 border-primary rounded text-primary back_btn">Back</button>
+                                        <button class="btn btn-lg mx-auto border border-2 border-info rounded text-info next_click">Next</button>
                                     </div>
                                     <div class="col-lg-3 col-md-1 col-sm-1"></div>
                                 </div>
@@ -205,23 +191,20 @@
                                 <br>
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" name="sdate" id="form2Example22" class="input date "
-                                            placeholder=" " onfocus="datefun()" onblur="hideDatePicker()" />
+                                        <input type="text" name="sdate" id="form2Example22" class="input date " placeholder=" " onfocus="datefun()" onblur="hideDatePicker()" />
                                         <label for="form2Example22" class="placeholder  label">Start Date</label>
                                     </div>
                                 </div>
 
                                 <div class="m-3">
                                     <div class="form-outline mb-4 input-container">
-                                        <input type="text" name="sdate" id="form2Example23" class="input date"
-                                            placeholder=" " onfocus="datefun1()" onblur="hideDatePicker1()" />
+                                        <input type="text" name="sdate" id="form2Example23" class="input date" placeholder=" " onfocus="datefun1()" onblur="hideDatePicker1()" />
                                         <label for="form2Example23" class=" placeholder  label">End Date</label>
                                     </div>
                                 </div>
 
                                 <div class="m-3">
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="domain"
-                                        id="domain">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="domain" id="domain">
                                         <option selected disabled>Select Domain</option>
                                         <option value="Web">Web</option>
                                         <option value="App">App</option>
@@ -233,25 +216,23 @@
 
                                     <div class="col-lg-3 col-md-3 col-sm-1"></div>
                                     <div class="col-lg-6 col-md-6 col-sm-10 button-next-back d-flex ">
-                                        <button
-                                            class="btn btn-lg border border-2 border-primary rounded text-primary back_btn">Back</button>
-                                        <input type="submit" value="SUBMIT"
-                                            class="btn btn-lg border border-2 border-info rounded text-info inter_register_btn">
+                                        <button class="btn btn-lg border border-2 border-primary rounded text-primary back_btn">Back</button>
+                                        <input type="submit" value="SUBMIT" class="btn btn-lg border border-2 border-info rounded text-info inter_register_btn">
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-1"></div>
                                 </div>
-                                
+
 
                             </div>
                             <br><br><br><br>
                         </div>
-                        
-                    </div>
-                   
-                </div>
-                
 
-                <!-- </form> -->     
+                    </div>
+
+                </div>
+
+
+                <!-- </form> -->
             </div>
             <div class="col-lg-3"></div>
 
@@ -264,7 +245,7 @@
     <script src="<?php echo base_url("assets/js/bootstrap.bundle.min.js"); ?>"></script>
     <script>
         // next button function
-        $(document).on('click', '.next_click', function (event) {
+        $(document).on('click', '.next_click', function(event) {
             event.preventDefault();
             var get_tmp_index = $('.next_click');
             var get_index = get_tmp_index.index($(this));
@@ -276,7 +257,7 @@
         });
 
         // previous button function
-        $(document).on('click', '.back_btn', function (event) {
+        $(document).on('click', '.back_btn', function(event) {
             event.preventDefault();
             $('.carousel').carousel('prev');
         })
@@ -351,31 +332,31 @@
 
 
 
-        $(document).ready(function () {
-            $("#Pin").click(function () {
+        $(document).ready(function() {
+            $("#Pin").click(function() {
                 $("#IpFile").trigger("click");
             });
-            $("#IpFile").change(function () {
+            $("#IpFile").change(function() {
                 $("#InputFile").val($("#IpFile")[0].files[0].name);
 
             });
 
-            $("#Pin1").click(function () {
+            $("#Pin1").click(function() {
                 $("#IpFile1").trigger("click");
             });
-            $("#IpFile1").change(function () {
+            $("#IpFile1").change(function() {
                 $("#InputFile1").val($("#IpFile1")[0].files[0].name);
             });
-            $("#Pin2").click(function () {
+            $("#Pin2").click(function() {
                 $("#IpFile2").trigger("click");
             });
-            $("#IpFile2").change(function () {
+            $("#IpFile2").change(function() {
                 $("#InputFile2").val($("#IpFile2")[0].files[0].name);
             });
-            $("#Pin4").click(function () {
+            $("#Pin4").click(function() {
                 $("#IpFile4").trigger("click");
             });
-            $("#IpFile4").change(function () {
+            $("#IpFile4").change(function() {
                 $("#InputFile4").val($("#IpFile4")[0].files[0].name);
             });
         });
@@ -426,6 +407,10 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#studentUid_err').text("");
+                return true;
             }
         }
 
@@ -439,6 +424,10 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#name_err').text("");
+                return true;
             }
         }
 
@@ -452,6 +441,10 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#reg_mail_err').text("");
+                return true;
             }
         }
 
@@ -466,6 +459,10 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#dept_err').text("");
+                return true;
             }
         }
 
@@ -479,6 +476,10 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#mobile_err').text("");
+                return true;
             }
         }
 
@@ -492,8 +493,13 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#clg_name_err').text("");
+                return true;
             }
         }
+
         function validateYear() {
             const yearInput = document.getElementById('reg_Year');
             const year = yearInput.value;
@@ -504,8 +510,34 @@
                     "color": "red",
                     "font-size": "10px"
                 });
+                return false;
+            } else {
+                $('#reg_Year_err').text("");
+                return true;
             }
         }
+
+        $('#reg_first_btn').on('click', function() {
+            if (Alphanumeric() && validateDate() && validateEmail() && validateDepartment() && validateMobile() && validateCollege() && validateYear()) {
+                alert("Success");
+            } else {
+                alert("Fail");
+            }
+        });
+        $('#reg_sec_btn').on('click', function() {
+            if (Alphanumeric() && validateUsername()) {
+                alert("Success");
+            } else {
+                alert("Fail");
+            }
+        });
+        $('#reg_third_btn').on('click', function() {
+            if (Alphanumeric() && validateDate()) {
+                alert("Success");
+            } else {
+                alert("Fail");
+            }
+        });
     </script>
 
 </body>

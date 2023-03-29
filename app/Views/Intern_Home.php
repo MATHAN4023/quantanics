@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Quantanics Insertnship</title>
     <!--semantic ui cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- stylesheet-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/client.css?version=<?php echo rand(); ?>">
     <!-- google font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400&display=swap" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400&display=swap" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- profile cards css file -->
     <link rel="stylesheet" href="<?php echo  base_url(); ?>/assets/custom/css/profile_card.css?version=<?php echo rand(); ?>">
 
@@ -28,12 +26,50 @@
     <script src="<?php echo base_url(); ?>/assets/custom/js/chat.js?version=<?php echo rand(); ?>"></script>
 
 </head>
+<style>
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 10em;
+    }
+
+    .read-more-state~.read-more-trigger:before {
+        content: 'Show more';
+    }
+
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Show less';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+</style>
+
 <body>
 
     <?php require_once "Header.php"; ?>
 
     <div class="container-fluid">
-    <!-- <div class="d-flex align-items-start"> -->
+        <!-- <div class="d-flex align-items-start"> -->
         <div class="row">
             <div class="col-lg-2 col-sm-3">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -45,19 +81,18 @@
             <div class="col-lg-10 col-sm-12">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <div class="jumbotron border border-1 rounded">             
+                        <div class="jumbotron border border-1 rounded">
                             <div class="card user-card-full">
                                 <div class="row ">
                                     <div class="col-sm-4 bg-c-lite-green user-profile">
                                         <div class="card-block text-center text-white">
                                             <div class="m-b-25">
-                                                <img src="<?php echo base_url("assets/workimages/img1.jpg"); ?>" class="img-radius"
-                                                alt="User-Profile-Image">
+                                                <img src="<?php echo base_url("assets/workimages/img1.jpg"); ?>" class="img-radius" alt="User-Profile-Image">
                                             </div>
                                             <br>
                                             <h6 class="f-w-600">User Name</h6>
                                             <p>Domain</p>
-                                            <i class="fas fa-edit"></i>
+                                            <i class="fas fa-edit" id="edit"></i>
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
@@ -99,13 +134,14 @@
                                                     <p class="m-b-2 f-w-600">Mobile no.</p>
                                                     <h6 class="text-muted f-w-400">1234567890</h6>
                                                 </div>
-                                            </div>
-                                          
+                                            </div><br> <br>
+                                            
+
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                        </div>                           
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <div class="jumbotron border border-2 shadow shadow-sm rounded " style="">
@@ -145,7 +181,7 @@
                                                 </div>
 
                                                 <div class="row m-3">
-                                                    <input type="submit"  class="btn btn-lg border border-success rounded text-success" value="Insert">
+                                                    <input type="submit" class="btn btn-lg border border-success rounded text-success" value="Insert">
                                                 </div>
 
                                             </div>
@@ -186,7 +222,7 @@
                                     </table>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <div class="jumbotron border border-2 shadow shadow-md rounded">
@@ -215,66 +251,80 @@
                                         <div class="col-lg-0 col-md-0 col-sm-0"> </div>
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 input-group ">
-                                            <textarea class="Text-Box" id="message" type="text" placeholder="Write your message..."
-                                                data-emojiable="true"></textarea>
-                                    
-                                                
-                                            <button id="send" class="submit" ><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                            <textarea class="Text-Box" id="message" type="text" placeholder="Write your message..." data-emojiable="true"></textarea>
+
+
+                                            <button id="send" class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 
                                         </div>
-                                        <div class="col-lg-0 col-md-0 col-sm-0"></div> 
+                                        <div class="col-lg-0 col-md-0 col-sm-0"></div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </div>
-                    
-            </div>
-        </div>
-    <!-- </div> -->
 
-  
-  <!-- <div class="tab-content" id="v-pills-tabContent">
+                </div>
+
+            </div>
+
+        </div>
+        <br> <br>
+        <!-- </div> -->
+
+
+        <!-- <div class="tab-content" id="v-pills-tabContent">
     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
   </div> -->
-</div>
+    </div>
 
 
-<script>
+    <script>
+        $('.messages').animate({
+            scrollTop: $('.messages ul').height()
+        }, "fast");
 
-$('.messages').animate({ scrollTop: $('.messages ul').height() }, "fast");
+        function newMessage() {
 
-function newMessage() {
+            var message = $('.input-group textarea').val();
+            if ($.trim(message) == '') {
+                message = $('.input-group .emoji-wysiwyg-editor').html();
+                if ($.trim(message) == '') {
+                    return false;
+                }
+            }
+            $('<li class="sent"><img src="<?php echo base_url("assets/workimages/img2.jpg"); ?>" alt="username" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+            $('.input-group textarea').val('');
+            $('.input-group .emoji-wysiwyg-editor').html('');
 
-    var message = $('.input-group textarea').val();
-    if ($.trim(message) == '') {
-        message = $('.input-group .emoji-wysiwyg-editor').html();
-        if ($.trim(message) == '') {
-            return false;
-        }
-    }
-    $('<li class="sent"><img src="<?php echo base_url("assets/workimages/img2.jpg"); ?>" alt="username" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
-    $('.input-group textarea').val('');
-    $('.input-group .emoji-wysiwyg-editor').html('');
+            $('.messages').animate({
+                scrollTop: $('.messages ul').height()
+            }, "fast");
+        };
 
-    $('.messages').animate({ scrollTop: $('.messages ul').height() }, "fast");
-};
+        $('.submit').click(function() {
+            newMessage();
+        });
 
-$('.submit').click(function () {
-    newMessage();
-});
-
-// $('#framechat .content .message-input ').on(function (e) {
-$('#framechat .content .input-group ').on('keydown', function (e) {
-    if (e.which == send) {
-        newMessage();
-        return false;
-    }
-});
-</script>
+        // $('#framechat .content .message-input ').on(function (e) {
+        $('#framechat .content .input-group ').on('keydown', function(e) {
+            if (e.which == send) {
+                newMessage();
+                return false;
+            }
+        });
+    </script>
+    <script>
+        const image = document.querySelector(".img-radius");
+        const input = document.querySelector("#edit");
+        input.addEventListener('click', function() {
+            // image.src = URL.createObjectURL(input.files[0]);
+            console.log('Icon clicked!');
+        });
+    </script>
 </body>
+
 </html>
