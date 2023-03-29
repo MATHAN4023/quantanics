@@ -56,4 +56,7 @@ class Home extends BaseController
     public function after_login(){
         return view("Intern_Home");
     }
+    public function card_show_more(){
+        return view("card_show_more");
+    }
 }
