@@ -26,6 +26,43 @@
     <script src="<?php echo base_url(); ?>/assets/custom/js/chat.js?version=<?php echo rand(); ?>"></script>
 
 </head>
+<style>
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 10em;
+    }
+
+    .read-more-state~.read-more-trigger:before {
+        content: 'Show more';
+    }
+
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Show less';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+</style>
 
 <body>
 
@@ -97,7 +134,8 @@
                                                     <p class="m-b-2 f-w-600">Mobile no.</p>
                                                     <h6 class="text-muted f-w-400">1234567890</h6>
                                                 </div>
-                                            </div>
+                                            </div><br> <br>
+                                            
 
                                         </div>
                                     </div>
@@ -225,10 +263,11 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
-          
+
         </div>
         <br> <br>
         <!-- </div> -->
