@@ -150,14 +150,12 @@
                                         <div class="pin" id="Pin1"><i class="fa-solid fa-paperclip pin-icon"></i></div>
                                         <input type="file" name="ipfile " id="IpFile1"
                                             class="hidden form-control form-control-md" onblur="checkFileSize()">
-                                        <span class="label_txt">Bonafide Lesser then 20KB and its only pdf , jpg, jpeg
-                                            aceept</span>
+                                        <span class="label_txt">Bonafide Lesser then 20KB and its only pdf , jpg, jpeg aceept</span>
                                     </div>
                                     <br>
                                 </div>
 
                                 <div class="m-3">
-
                                     <div class="form-outline mb-4 input-container">
                                         <input type="text" name="inputFile" id="InputFile2" class="input"
                                             placeholder=" " readonly>
@@ -166,8 +164,7 @@
                                         <div class="pin" id="Pin2"><i class="fa-solid fa-paperclip pin-icon"></i></div>
                                         <input type="file" name="ipfile" id="IpFile2"
                                             class="hidden form-control form-control-md" onblur="checkFileSize()">
-                                        <span class="label_txt">ID Card Lesser then 20KB and its only pdf , jpg, jpeg
-                                            aceept</span>
+                                        <span class="label_txt">ID Card Lesser then 20KB and its only pdf , jpg, jpeg aceept</span>
                                     </div>
                                     <br>
                                 </div>
@@ -394,17 +391,6 @@
                 IpFile.value = ''; // Clear the input field
             }
         });
-
-        // const IpFile = document.getElementById('IpFile1');
-        // const maxFileSize =20 * 1024; // 5 MB
-        // IpFile.addEventListener('change', () => {
-        //     const file = IpFile.files[0];
-
-        //     if (file.size > maxFileSize) {
-        //         alert('File size exceeds the limit of 20 kB');
-        //         IpFile.value = ''; // Clear the input field
-        //     }
-        // });
 
         function datefun() {
             var date = document.getElementById("form2Example22");

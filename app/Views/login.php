@@ -114,13 +114,9 @@
                 </div>
                 <div class="col-lg-3 col-md-2"></div>
             </div>
-
-
         </div>
         <br><br>
-
     </div>
-
     <?php require_once "Footer.php"; ?>
 
 
@@ -217,10 +213,4 @@
             }
         }
     </script>
-
-
-
-
-
-
 </html>
