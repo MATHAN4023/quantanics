@@ -127,15 +127,11 @@
                                         <input type="text" name="inputFile" id="InputFile1" class="input" placeholder=" " readonly>
                                         <label for="form2Example11" class="placeholder label">Bonafide</label>
                                         <div class="pin" id="Pin1"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-<<<<<<< HEAD
-                                        <input type="file" name="ipfile " id="IpFile1"
-                                            class="hidden form-control form-control-md" onblur="checkFileSize()">
+                                        <input type="file" name="ipfile " id="IpFile1" class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">Bonafide Lesser then 20KB and its only pdf , jpg, jpeg aceept</span>
-=======
                                         <input type="file" name="ipfile " id="IpFile1" class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">Bonafide Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
->>>>>>> e8ebcd8ab8670bd64aa283b9aa1b57b19e097f36
                                     </div>
                                     <br>
                                 </div>
@@ -146,15 +142,11 @@
                                         <label for="form2Example11" class="placeholder label">Id
                                             Card</label>
                                         <div class="pin" id="Pin2"><i class="fa-solid fa-paperclip pin-icon"></i></div>
-<<<<<<< HEAD
-                                        <input type="file" name="ipfile" id="IpFile2"
-                                            class="hidden form-control form-control-md" onblur="checkFileSize()">
+                                        <input type="file" name="ipfile" id="IpFile2" class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">ID Card Lesser then 20KB and its only pdf , jpg, jpeg aceept</span>
-=======
                                         <input type="file" name="ipfile" id="IpFile2" class="hidden form-control form-control-md" onblur="checkFileSize()">
                                         <span class="label_txt">ID Card Lesser then 20KB and its only pdf , jpg, jpeg
                                             aceept</span>
->>>>>>> e8ebcd8ab8670bd64aa283b9aa1b57b19e097f36
                                     </div>
                                     <br>
                                 </div>
